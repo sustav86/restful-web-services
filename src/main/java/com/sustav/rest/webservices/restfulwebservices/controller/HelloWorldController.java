@@ -23,4 +23,9 @@ public class HelloWorldController {
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
         return new HelloWorldBean(String.format("Hello World Microservices from %s", name));
     }
+
+    @GetMapping(path = "/hello-world-interbalized")
+    public String helloWorldInternalized() {
+        return "Good morning";
+    }
 }
