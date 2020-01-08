@@ -33,5 +33,9 @@ public class UserDaoService {
         return users.stream().filter(u -> u.getId().equals(id)).findFirst().orElse(null);
     }
 
+    public boolean deleteById(Long id) {
+        return users.removeIf(next -> next.getId().equals(id));
+    }
+
 
 }
