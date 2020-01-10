@@ -10,6 +10,7 @@ import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 import java.util.Locale;
 
 @SpringBootApplication
+//@EnableSwagger2
 public class RestfulWebServicesApplication {
 
     public static void main(String[] args) {
